@@ -2,8 +2,7 @@ package d.p.haronatos.users_collection.web.controller;
 
 
 import d.p.haronatos.users_collection.db.Models.User;
-import d.p.haronatos.users_collection.db.Service.ServiceHibernate;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import d.p.haronatos.users_collection.db.Service.Service;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
@@ -17,8 +16,9 @@ import java.util.ArrayList;
 @Controller
 public class HelloController {
 
-    ServiceHibernate service;
-    public HelloController(ServiceHibernate service){
+    Service service;
+
+    public HelloController(Service service) {
         this.service = service;
     }
 
@@ -30,7 +30,7 @@ public class HelloController {
 
     @GetMapping(value = "/getAllUsers")
     public String getAll(Model model) {
-        if (!service.getAllUsers().equals(new ArrayList<User>())){
+        if (!service.getAllUsers().equals(new ArrayList<User>())) {
             model.addAttribute("users", service.getAllUsers());
             return ("allUsers");
         } else {

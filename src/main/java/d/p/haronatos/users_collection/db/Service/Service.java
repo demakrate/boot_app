@@ -4,7 +4,7 @@ import d.p.haronatos.users_collection.db.Models.User;
 
 import java.util.List;
 
-public interface service {
+public interface Service {
     public List<User> getAllUsers();
 
     public User getUserByMail(String mail);

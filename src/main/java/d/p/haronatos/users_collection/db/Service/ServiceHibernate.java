@@ -2,12 +2,11 @@ package d.p.haronatos.users_collection.db.Service;
 
 import d.p.haronatos.users_collection.db.Models.User;
 import d.p.haronatos.users_collection.db.dao.dao;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
-public class ServiceHibernate implements service {
+@org.springframework.stereotype.Service
+public class ServiceHibernate implements Service {
     private final dao methods;
 
     public ServiceHibernate(dao methods) {
