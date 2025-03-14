@@ -5,13 +5,13 @@ import d.p.haronatos.users_collection.db.Models.User;
 import java.util.List;
 
 public interface Service {
-    public List<User> getAllUsers();
+    List<User> getAllUsers();
 
-    public User getUserByMail(String mail);
+    User getUserByMail(String mail);
 
-    public Boolean addUser(User user);
+    Boolean addUser(User user);
 
-    public Boolean deleteUser(String mail);
+    Boolean deleteUser(String mail);
 
-    public void changeUser(User user);
+    void changeUser(User user);
 }
