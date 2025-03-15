@@ -1,8 +1,8 @@
 package d.p.haronatos.users_collection.web.controller;
 
 
-import d.p.haronatos.users_collection.db.Models.User;
-import d.p.haronatos.users_collection.db.Service.Service;
+import d.p.haronatos.users_collection.db.models.User;
+import d.p.haronatos.users_collection.db.service.Service;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

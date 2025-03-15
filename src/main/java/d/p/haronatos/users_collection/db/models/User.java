@@ -1,4 +1,4 @@
-package d.p.haronatos.users_collection.db.Models;
+package d.p.haronatos.users_collection.db.models;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

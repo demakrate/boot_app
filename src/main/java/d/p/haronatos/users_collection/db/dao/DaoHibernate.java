@@ -9,7 +9,7 @@ import jakarta.persistence.Query;
 import jakarta.persistence.TypedQuery;
 import org.springframework.stereotype.Repository;
 
-import d.p.haronatos.users_collection.db.Models.User;
+import d.p.haronatos.users_collection.db.models.User;
 
 
 import java.util.ArrayList;

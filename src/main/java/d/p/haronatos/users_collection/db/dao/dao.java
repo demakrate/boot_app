@@ -1,6 +1,6 @@
 package d.p.haronatos.users_collection.db.dao;
 
-import d.p.haronatos.users_collection.db.Models.User;
+import d.p.haronatos.users_collection.db.models.User;
 
 import java.util.List;
 
